@@ -533,7 +533,7 @@ function VoteTab({ weekNum, weekId, votedMap, submitVote, status, votingOpen, cd
                 </select>
               </div>
               <div>
-                <div style={{ fontFamily: "monospace", fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: C.mid, marginBottom: 8 }}>Which ERA92 Elevate pillar? (select all that apply)</div>
+                <div style={{ fontFamily: "monospace", fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: C.mid, marginBottom: 8 }}>Why do they deserve it? Pick all that apply</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
                   {PILLARS.map(p => {
                     const sel = pillars.includes(p.label);

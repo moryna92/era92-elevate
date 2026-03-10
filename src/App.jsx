@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 
 const ADMIN_PASSWORD = "Helloteam";
-const TEAM = ["Sera Lynn Elina","Henry Kisambira","Alicia Pieuse Lugano","Amos Bogere","Joyce Nabukenya","Peter Mwanja","David Sekamanya","Timothy Kawanguzi","Edward Kasule","Moreen Nassolo","Meshack","Charles Sekidde"];
-const INITIALS = {"Sera Lynn Elina":"SL","Henry Kisambira":"HK","Alicia Pieuse Lugano":"AP","Amos Bogere":"AB","Joyce Nabukenya":"JN","Peter Mwanja":"PM","David Sekamanya":"DS","Timothy Kawanguzi":"TK","Edward Kasule":"EK","Moreen Nassolo":"MN","Meshack":"ME","Charles Sekidde":"CS"};
-const PALETTE = ["#d4820a","#4a7c59","#b84c1e","#6a5c48","#8a6a9a","#3a6a8a","#7a9a4a","#9a4a6a","#4a7c8a","#c0522a","#5a8a6a","#8a4a2a"];
+const TEAM = ["Sera Lynn Elina","Henry Kisambira","Alicia Pieuse Lugano","Amos Bogere","Joyce Nabukenya","Peter Mwanja","David Sekamanya","Timothy Kawanguzi","Edward Kasule","Moreen Nassolo","Meshack","Charles Sekidde","Nicholas Onapa","Alexander Tumusiime"];
+const INITIALS = {"Sera Lynn Elina":"SL","Henry Kisambira":"HK","Alicia Pieuse Lugano":"AP","Amos Bogere":"AB","Joyce Nabukenya":"JN","Peter Mwanja":"PM","David Sekamanya":"DS","Timothy Kawanguzi":"TK","Edward Kasule":"EK","Moreen Nassolo":"MN","Meshack":"ME","Charles Sekidde":"CS","Nicholas Onapa":"NO","Alexander Tumusiime":"AT"};
+const PALETTE = ["#d4820a","#4a7c59","#b84c1e","#6a5c48","#8a6a9a","#3a6a8a","#7a9a4a","#9a4a6a","#4a7c8a","#c0522a","#5a8a6a","#8a4a2a","#3a7a9a","#9a6a3a"];
 const PILLARS = [
   {icon:"🎯",label:"KPI & Target Achievement",desc:"Hit committed deliverables — client work, training targets, placements, revenue"},
   {icon:"💻",label:"Quality of Work Delivered",desc:"World-class output — web, design, film, brand work that represents ERA92 Elevate's standard"},
@@ -266,7 +266,7 @@ export default function App() {
           <div style={{ animation: "fadeUp 0.4s ease" }}>
             {/* stats row */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", background: C.amber, borderRadius: 4, overflow: "hidden", marginBottom: 24 }}>
-              {[[12,"Strikers"],[history.length,"Weeks Done"],[weekVotes.length,"Votes This Week"],[52-history.length,"Weeks Left"]].map(([n,l]) => (
+              {[[14,"Strikers"],[history.length,"Weeks Done"],[weekVotes.length,"Votes This Week"],[52-history.length,"Weeks Left"]].map(([n,l]) => (
                 <div key={l} style={{ padding: "18px 12px", borderRight: "1px solid rgba(255,255,255,0.2)", textAlign: "center", lastChild: { borderRight: "none" } }}>
                   <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 34, fontWeight: 700, color: C.ink, lineHeight: 1 }}>{n}</div>
                   <div style={{ fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: 1.5, color: "rgba(26,18,8,0.6)", marginTop: 3 }}>{l}</div>
